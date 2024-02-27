@@ -86,8 +86,8 @@
       <article id="contact">
         <h2>contact</h2>
         <p> i would like to thank for you!</pa>
-        <form action="http://httpbin.org/get",
-          method="get"></form>
+        <form action="http://httpbin.org/get"
+          method="get">
           <p>
             <label for="firstName">firstname</label>
             <input type="text" name="firstName" id="firstname" placeholder="Enter your firstName"
@@ -102,6 +102,11 @@
             <label for="password">password</label>
             <input type="password" name="password" id="password" placeholder="Enter a password"
             required >
+          </p>
+          <p>
+            <label for="phone no">phone no</label>
+            <input type="tel" name="phone no" id="phone no" placeholder="enter your phoneno"
+            required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
           </p>
           <p>
             <label for="decade">decade</label>
@@ -140,6 +145,54 @@
               </datalist>
 
           </p> -->
+
+          <fieldset>
+            <legend>your fav pets</legend>
+            <p>
+               <label for="dog">dog</label> 
+               <input type=radio name="pet" id="dog" value="dog">
+            </p>
+            <p>
+               <label for="cat">cat</label> 
+               <input type=radio name="pet" id="cat" value="cat">
+            </p>
+            <p>
+               <label for="otherpets">otherpets</label> 
+               <input type=radio name="pet" id="otherpets" value="otherpets">
+            </p>
+
+           
+          </fieldset>
+          <fieldset>
+            <legend>BIRIYANI READY</legend>
+            <p>
+              <label for="chicken biriyani">chicken biriyani</label>
+              <input type="checkbox" name="biriyani" id ="chicken biriyani" value="chicken biriyani">
+            </p>
+            <p>
+              <label for="mutton biriyani">mutton biriyani</label>
+              <input type="checkbox" name="biriyani" id ="mutton biriyani" value="mutton biriyani">
+            </p>
+            <p>
+              <label for="beef biriyani">beef biriyani</label>
+              <input type="checkbox" name="biriyani" id ="chicken biriyani" value="beef biriyani">
+            </p>
+            <p>
+              <label for="others biriyani">others biriyani</label>
+              <input type="checkbox" name="biriyani" id ="others biriyani" value="others biriyani">
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>send message</legend>
+            <p>
+              <label for="send your message"></label>
+             <textarea name="message" id="message" cols="30" rows="10"
+             placeholder="type your text"></textarea>
+            </p>
+          </fieldset>
+          <button type="submit">submit</button>
+          <button type="submit" formaction="http://httpbin.org/get/post" formmethod="post">post</button>
+          <button type="reset">reset</button>
         </form>
       </article>
       &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;hai heloooooooooooooooo! <br>
