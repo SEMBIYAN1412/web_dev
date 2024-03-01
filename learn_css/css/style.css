@@ -1,18 +1,16 @@
-a{
+ol li :nth-child(2){
+    list-style-type:upper-latin;
+    list-style-position: inside;
     color: aqua;
-    
-    opacity: 0.5px;
-
 }
 
-a:visited{
-    color: black;
-    cursor: pointer;
-
-}
-a:active{
-    color: blueviolet;
-}
-a:hover , a:focus{
+ul li:nth-last-child(2){
+    list-style-position: inside;
     color: chartreuse;
+    
+}
+
+::marker{
+    color:blue;
+    font-size: 2em;
 }
