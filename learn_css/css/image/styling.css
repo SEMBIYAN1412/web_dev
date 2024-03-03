@@ -1,0 +1,14 @@
+.div img,.div p{
+    filter: saturate(0%);
+    width:10%;
+    border: 2px solid whitesmoke;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+.div img:hover,.div p :hover{
+    filter : saturate(100%);
+    width: 100px;
+}
