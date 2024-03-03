@@ -1,16 +1,45 @@
-ol li :nth-child(2){
-    list-style-type:upper-latin;
-    list-style-position: inside;
-    color: aqua;
+body{
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+ 
+    text-align: center;
 }
 
-ul li:nth-last-child(2){
-    list-style-position: inside;
-    color: chartreuse;
+nav{
+    border: 3px solid red;
+    font-size: 2rem;
+    border-radius: 2rem;
+    line-height: 7rem;
+    margin: 0 auto;
+    max-width: 35rem;
+    
+    
+  
     
 }
+h2{
+    padding: 2rem;
+    background-color: cornflowerblue;
+}
+ul{
+    list-style-type:none ;
+}
+li{
+    
+    border-top: 2px solid black;
+}
+li a,li a:visited{ 
+       text-decoration: none;
+       color: aqua;
 
-::marker{
-    color:blue;
-    font-size: 2em;
+}
+li a:hover,li a:focus{
+    background: black;
+    color: whitesmoke;
+}
+li a{
+    display: block;
+}
+li a:last-child(3){
+    
 }
