@@ -1,37 +1,15 @@
-/*P{
-    background-color: grey;
+.float{
+    background-color: black;
+    color: whitesmoke;
+    width: 30vw;
+    height: 30vh;
 }
-main{
-    background-color: skyblue;
-   
+body{
+    font-size: 1.5rem;
 }
-.field{
-    background-color: yellow;
-    color: red;
-    padding: 1rem;
-    display: inline-block;
-}*/
-ul{
-    background-color: aqua;
-    color: red;
-  
-    list-style-type: none;
-    text-align: center;
-    padding: 1rem;
+.left{
+   float: left;
 }
-li {
-   
-    display: inline-block;
-    margin-inline:2rem ;
-    
-
-}
-li a:hover,li a :focus{
-    color:green;
-    background: yellow;
-    text-decoration: underline;
-}
-li a{
-    text-decoration:none;
-
+p{
+    margin-left: 20%;
 }
