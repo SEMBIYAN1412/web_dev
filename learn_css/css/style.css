@@ -1,4 +1,4 @@
-.float{
+.block{
     background-color: black;
     color: whitesmoke;
     width: 30vw;
@@ -9,7 +9,21 @@ body{
 }
 .left{
    float: left;
+   margin-right: 30px;
 }
-p{
-    margin-left: 20%;
+
+.right{
+    float: right;
+    margin-left: 30px;
+}
+.clear{
+    clear: both;
+}
+section{
+    font-size: 1.75rem;
+    border: 2px;
+    border-color: black;
+    background-color: chartreuse;
+    padding: 1rem;
+    overflow: auto;
 }
