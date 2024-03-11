@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer-container { 
+    border: 3px dashed black;
+    width: 30vw;
+    height: 70vh;
+    margin: 40px auto;
+
+}
+.inner-container{
+    border:2px solid blueviolet;
+    min-height: 250px;
+    width: 200px;
+}
