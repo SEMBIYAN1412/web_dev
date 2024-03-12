@@ -5,13 +5,45 @@
 }
 .outer-container { 
     border: 3px dashed black;
-    width: 30vw;
-    height: 70vh;
+    width: 30em;
+    height: 30em;
     margin: 40px auto;
+    position: relative;
 
 }
 .inner-container{
     border:2px solid blueviolet;
-    min-height: 250px;
-    width: 200px;
+    height: 25em;
+    width: 20em;
+    margin:20px auto;
+    position: relative;
+}
+.box{
+   
+    border:2px solid red;
+    width: 100px;
+    height: 100px;
+
+}
+.absolute{
+    color:whitesmoke;
+    padding:2rem;
+    background-color: red;
+    border: 2rem;
+    margin: 2px auto;
+}
+.relative{
+    color: white;
+    background-color: blue;
+    position:relative;
+}
+.fixed{
+    color: whitesmoke;
+    background-color: green;
+    position:fixed;
+}
+.sticky{
+    color:whitesmoke;
+    background-color: black;
+    position: sticky;
 }
