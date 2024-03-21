@@ -3,4 +3,13 @@
     background-color: black;
     font-size: 1rem;
     position: sticky;
+
+}
+.quote{
+    color:black;
+    background-color: red ;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    
+
 }
