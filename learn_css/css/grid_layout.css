@@ -1,0 +1,16 @@
+.box{
+    background-color: black;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding: .5px;
+
+    
+}
+body{
+    min-height: 100vh;
+}
+.container{
+            display: grid;
+            grid-auto-flow: column;
+}
+
