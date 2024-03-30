@@ -61,9 +61,19 @@ h1{
   
 }
 
-body{
+/*body{
     min-height: 100vh;
   
     background-image:linear-gradient(to left, blue, white );
 
+
+}*/
+
+.clip{
+    text-align:center;
+    
+    font-size:5rem;
+    background-image:url(image/images.jpeg);
+    -webkit-background-clip:text;
+    color: transparent;
 }
