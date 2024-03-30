@@ -8,16 +8,20 @@ body{
 
 }
 
-.example{
+/*.example{
+    width: 70%;
+    height: auto;
     margin-top: 1rem;
     padding-left: 20px;
     border: 2px solid red;
-}
+}*/
 
 .hero{
     width: 50%;
+    height: 50%;
     padding-left: 30px;
     padding-top: 20px;
+    
    
     
 }
@@ -27,15 +31,18 @@ body{
     height: auto;
     border:5px double red;
     border-radius: 50%;
+    
 
 }
 .hero{
    display: flex;
-    border-bottom: 2px solid black ;
+    border-bottom: 3px solid black ;
     padding: 20px;
    justify-content: flex-start;
    align-items: center;
    gap: 30px;
+   background-image: url('image/india-food-paratha-1120x732.webp');
+   background-size:cover;
 }
 .nowrap{
     white-space: nowrap;
@@ -43,4 +50,20 @@ body{
 .offscreen{
     position: absolute;
     left: -10000px;
+}
+h1{
+    background-color: hsla(0, 0%, 0%, 0.26);
+    color: antiquewhite;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    border-radius: 20px;
+    text-wrap: wrap;
+  
+}
+
+body{
+    min-height: 100vh;
+  
+    background-image:linear-gradient(to left, blue, white );
+
 }
