@@ -76,4 +76,9 @@ h1{
     background-image:url(image/images.jpeg);
     -webkit-background-clip:text;
     color: transparent;
+   
+}
+body{
+    background-image: linear-gradient(skyblue,orange);
+
 }
