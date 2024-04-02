@@ -1,0 +1,120 @@
+/* ||RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* ||variables */
+:root{
+    /* || color */
+    --BGCOLOR: #000000;
+    --ALT-BGCOLOR:rgb(245, 245, 245);
+    --TEXT-COLOR:whitesmoke;
+
+    /* ||font */
+    --fs:1.5rem;
+    --ff:TimesNewRoman ;
+
+    /* ||place */
+    --PLACE-CONTENT:CENTER;
+
+    /*|| square*/
+    --square-bgcolor:papayawhip;
+    --square-size:max(150px ,20vw);
+   
+
+
+
+}
+body{
+    font: var(--fs,--ff);
+    min-height: 100vh;
+    background-color: bisque;
+    background-image: radial-gradient(var(--ALT-BGCOLOR) , var(--BGCOLOR));
+    display:flex;
+    flex-direction: column;
+}
+
+header,nav,  footer{
+    display: grid;
+    place-content: var(--PLACE-CONTENT);
+    grid-template-columns: 100%;
+    text-align: center;
+}    
+main{
+    display: flex;
+    flex-grow: 1;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: min(4vw , 15px);
+}
+.square{
+    background-color: var(--square-bgcolor);
+    width: 5em;
+    height: 5em;
+    padding: 2px solid black;
+    border-radius: 20%;
+    box-shadow: 6px;
+    place-content: center;
+    display: grid;
+}
+
+.square-highlight{
+    --square-bgcolor:black;
+}
+header , footer{
+    position: sticky;
+    background-color: #1E293B;
+    color: var(--TEXT-COLOR);
+}
+
+header {
+    top:0;
+}
+nav{
+    background-color: white;
+    color: #1E293B;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    bottom: 0;
+}
+
+/* ||small*/
+@media screen and (min-width : 576px){
+    body{
+       background-color: green;
+        background-image: radial-gradient(whitesmoke ,green);
+    nav{
+        display: none;
+    }   
+ }
+}
+
+/* ||medium*/
+@media screen and (min-width : 768px){
+    body{
+       background-color: red;
+        background-image: radial-gradient(whitesmoke ,red);
+    
+ }
+}
+
+/* || large*/
+@media screen and (min-width : 992px){
+    body{
+       background-color: gold;
+        background-image: radial-gradient(whitesmoke ,gold);
+     
+ }
+}
