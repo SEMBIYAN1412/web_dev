@@ -42,7 +42,7 @@ header,nav,  footer{
     grid-template-columns: 100%;
     text-align: center;
 }    
-main{
+/*main{
     display: flex;
     flex-grow: 1;
     padding: 10px 0;
@@ -50,6 +50,12 @@ main{
     align-items: center;
     flex-flow: row wrap;
     gap: min(4vw , 15px);
+}*/
+main{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,330px));
+    flex-grow: 1;
+    gap:min(2vh, 20px);
 }
 .square{
     background-color: var(--square-bgcolor);
@@ -117,4 +123,12 @@ footer{
         background-image: radial-gradient(whitesmoke ,gold);
      
  }
+}
+/* || DARK */
+@media (prefer-color-scheme:dark){
+    :root{
+        --BGCOLOR:BLACK;
+        --ALT-COLOR:red;
+        --RADIAL-COLOR:hsla(120, 67%, 44%, 0.393);
+    }
 }
