@@ -1,0 +1,50 @@
+/* RESET */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* || variable*/
+:root{
+    --HEADER-BGCOLOR:BLACK;
+    --HEADER-COLOR:WHITE;
+
+
+}
+body{
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+
+    min-height: 100vh;
+}
+
+.header__btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.btn--secondary{
+    background-color: yellow;
+}
+
+.btn--lean{
+    transform: skewX(-10deg);
+}
+
+.btn--border-lg{
+    border: 5px solid whitesmoke;
+}
+
+.header{
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding: 1rem 1rem 0.5rem;
+}
