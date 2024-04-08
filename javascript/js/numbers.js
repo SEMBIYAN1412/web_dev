@@ -21,3 +21,8 @@ console.log(Number.parseInt(myVariable))
 
 //tofixed()
 console.log(Number.parseFloat(myFloat).toFixed(2))
+
+// isNaN()
+console.log(Number.isNaN("dhuddu"))
+console.log(isNaN("dhuddu"))
+
