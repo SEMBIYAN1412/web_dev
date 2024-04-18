@@ -52,3 +52,22 @@ console.log(secondArray);
 //const conArray=myArray.concat(secondArray);
 const conArray=[...myArray,...secondArray];
 console.log(conArray);
+
+
+//eg  for one dimensional array
+const earnMoneyA=['frontend','backend','fullstack'];
+const earnMoneyB=['AI','blockchain','ML'];
+const growMoneyA=['stock','realestate','fixed income'];
+const growMoneyB=['options','features'];
+const giveMoney=['QualityEducation'];
+
+console.log(earnMoneyA[1],growMoneyB[1]);
+
+//2 dimensional array
+const earnMoney=[earnMoneyA,earnMoneyB];
+const growMoney=[growMoneyA,growMoneyB];
+console.log(earnMoney[0][1],growMoney[1][1]);
+
+//3 dimensions
+const money=[earnMoney,growMoney,giveMoney];
+console.log(money[0][0][2],money[1][0][1],money[2][0]);
