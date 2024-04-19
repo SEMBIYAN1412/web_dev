@@ -28,3 +28,16 @@ const car=Object.create(vehicle);       //inheritance  and create an object
 car.engine=function(){return 'booooooooooooom!!!!!!!'}          //function overriding
 console.log(car.engine());
 
+
+//for in loop
+for(let job in myobj){
+    console.log(`${job},its ${myobj[job]}`);
+}
+
+console.log(myobj.hasOwnProperty("no"));
+
+const{subscribers,no}=myobj;
+function ob({no}){
+    return no;
+}
+console.log(ob(myobj));
