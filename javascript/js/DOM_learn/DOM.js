@@ -29,3 +29,36 @@ for (i=0; i<evenDivs.length; i++){
     evenDivs[i].style.width="180px";
     evenDivs[i].style.backgroundColor="skyblue";
 }
+
+const navText=document.querySelector("nav h1");
+console.log(navText);
+navText.textContent="HELLO WORLD !";
+
+const navBar=document.querySelector("nav");
+console.log(navBar);
+navBar.innerHTML="<h1>hello Soldiers</h1> <p>pc users</p>";
+navBar.style.justifyContent="space-evenly";
+
+console.log(evenDivs[1]);
+console.log(evenDivs[1].parentElement.lastChild);
+console.log(evenDivs[1].parentElement.childNodes);
+console.log(evenDivs[0].parentElement.hasChildNodes());
+console.log(evenDivs[1].parentElement.children);
+
+// view1.style.display="none";
+// view2.style.display="flex";
+// view2.style.flexDirection="row";
+// view2.style.flexWrap="wrap";
+// view2.style.margin="15px";
+
+// console.log(view2.lastChild);
+// view2.lastElementChild.remove();
+
+// const newDiv=document.createElement("div");
+// newDiv.textContent="Hi_JS Learners";
+// newDiv.textColor="blue"; 
+// newDiv.style.height="100px";
+// newDiv.style.width="100px";
+// newDiv.style.backgroundColor="red";
+
+// view2.append(newDiv);
