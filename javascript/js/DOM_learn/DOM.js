@@ -45,7 +45,7 @@ console.log(evenDivs[1].parentElement.childNodes);
 console.log(evenDivs[0].parentElement.hasChildNodes());
 console.log(evenDivs[1].parentElement.children);
 
-// view1.style.display="none";
+view1.style.display="none";
 view2.style.display="flex";
 view2.style.flexDirection="row";
 view2.style.flexWrap="wrap";
@@ -53,12 +53,19 @@ view2.style.margin="15px";
 
 console.log(view2.lastChild);
 view2.lastElementChild.remove();
+const createDiv=(parent,iter)=>{
+    const newDiv=document.createElement("div");
+    newDiv.textContent=iter; 
+    newDiv.style.height="100px";
+    newDiv.style.width="100px";
+    newDiv.style.backgroundColor="red";
+    newDiv.style.alignItems="Center";
+    newDiv.style.justifyContent="Center";
+    newDiv.style.display="flex";
+    newDiv.style.padding="10px 10px 10px 10px";
+    parent.append(newDiv);
+}
+for(let i=0;i<11;i++){
+    createDiv(view2,i);
+}
 
-const newDiv=document.createElement("div");
-newDiv.textContent="Hi_JS Learners";
-newDiv.textColor="blue"; 
-newDiv.style.height="100px";
-newDiv.style.width="100px";
-newDiv.style.backgroundColor="red";
-
-view2.append(newDiv);
