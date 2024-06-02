@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script defer src="event_listener.js"></script>
+
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            min-height: 100vh;
+           
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height:auto;
+            width: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            width: 100vw;
+            height: 48px;
+            position: fixed;
+            top: 0;
+            border-bottom: 1px solid #fff;
+            z-index: 2;
+            background-color: #000;
+            color: #fff;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vw;
+            z-index: 1;
+            padding-top: 48px;
+            border: 1px solid black;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        .view {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: lightgray;
+            color: #000;
+            
+        }
+
+        .view > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+            color: #fff;
+            margin: 10px;
+        }
+       
+</style>
+</head>
+<body>
+    <nav>
+        <h1>My Page</h1>
+    </nav>
+    <main>
+        <section id="view" class="view view1">
+          <div class="white"><h2>Hello</h2></div>
+        </section>
+    </main>
+</body>
+</html>
