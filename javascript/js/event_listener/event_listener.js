@@ -18,11 +18,12 @@ h2.removeEventListener("click",dosomething,false);
 // });
 
 //data load readystate check
-document.addEventListener("readystatechange",(event)=>{
+const dataLoad=document.addEventListener("readystatechange",(event)=>{
     if(event.target.readystate==="complete"){
         console.log("complete");
+        console.log(dataLoad);
     initApp();}
-})
+});
 
 //event public up
 const initApp=()=>{
@@ -31,13 +32,17 @@ const initApp=()=>{
     const h2=div.querySelector("h2");
     view.addEventListener("click",(event)=>{
         {
-            view.Style.backgroundColor="pink";
+            // event.target.Style.backgroundColor="pink";
+            view.classList.toogle("purple");
         }})
         div.addEventListener("click",(event)=>{
             {
-                view.Style.backgroundColor="red";
+                div.classList.add("purple");
+                div.classList.remove("black");
             }})
             h2.addEventListener("click",(event)=>{
-              event.target.textContent="learners";    
+            //   event.target.textContent="learners";    
+            const myText=event.target.textContent;
+            myText==="Hello"?(event.target.textContent("listener")):(event.target.textContent("Hello"))
             }) 
         };
