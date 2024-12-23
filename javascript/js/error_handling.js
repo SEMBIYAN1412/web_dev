@@ -20,3 +20,4 @@ const makeError=() =>{
     }
 };
 makeError();
+// console.log(makeError().i);
